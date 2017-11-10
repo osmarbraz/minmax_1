@@ -5,6 +5,10 @@
  * Disciplinas: Projeto e Análise de Algoritmos
  * Prof Alexandre Gonçalves da Silva 
  * Baseado nos slides 22 da aula do dia 22/09/2017  
+ *
+ * Problema de Seleção
+ * Dado um conjunto A de n números inteiro e um inteiro i, 
+ * determinar o i-ésimo menor elemento de A.
  */
 
 /**
