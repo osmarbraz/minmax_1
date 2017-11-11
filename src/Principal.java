@@ -4,7 +4,7 @@
  * Programa de Pós-Graduação em Ciências da Computação - PROPG
  * Disciplinas: Projeto e Análise de Algoritmos
  * Prof Alexandre Gonçalves da Silva 
- * Baseado nos slides 22 da aula do dia 22/09/2017  
+ * Baseado nos slides 23 da aula do dia 22/09/2017  
  * Página 156 Cormen 3a Ed
  *
  * Problema de Seleção
