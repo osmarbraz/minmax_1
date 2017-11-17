@@ -4,12 +4,20 @@
  * Programa de Pós-Graduação em Ciências da Computação - PROPG
  * Disciplinas: Projeto e Análise de Algoritmos
  * Prof Alexandre Gonçalves da Silva 
+ *
  * Baseado nos slides 23 da aula do dia 22/09/2017  
+ *
  * Página 156 Cormen 3a Ed
  *
  * Problema de Seleção
  * Dado um conjunto A de n números inteiro e um inteiro i, 
  * determinar o i-ésimo menor elemento de A.
+ *
+ * Atenção:
+ * Vetor em java inicia em 0, os algoritmos consideram início em 1.
+ * A subtraçào de -1 ocorre somente no local de acesso ao vetor ou matriz 
+ * para manter a compatibilidade entre os algoritmos.
+ *
  */
 
 /**
@@ -27,15 +35,15 @@ public class Principal {
      */
     public static int[] minMax(int A[], int n) {
         //Considere o primeiro como menor
-        int min = A[0];
+        int min = A[1-1];
         //Considere o primeiro como maior
-        int max = A[0];
-        for (int j = 0; j < n; j++) {
-            if (A[j] < min) {
-                min = A[j];
+        int max = A[1-1];
+        for (int j = 2; j <= n; j++) {
+            if (A[j-1] < min) {
+                min = A[j-1];
             }
-            if (A[j] > max) {
-                max = A[j];
+            if (A[j-1] > max) {
+                max = A[j-1];
             }
         }
         //Cria um vetor com dois elementos para retornar o menor e maior
